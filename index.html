@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Tracker</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body class="green lighten-5">
+    <header>
+        <nav class="green darken-1">
+            <div class="nav-wrapper container">
+              <a href="#" class="brand-logo">Gig Tracker</a>
+              <!-- Hamburger Menu for medium and small screens -->
+               <a href="#" data-target="mobile-menu" class="sidenav-trigger right hide-on-large-and-up" aria-label="Open side menu">
+                <i class="material-icons">menu</i>
+                </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="pages/zoe.html">Zoe</a></li>
+                <li><a href="pages/cooper.html">Cooper</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <aside>
+        <!-- Sidenav for small and medium screens -->
+        <ul class="sidenav" id="mobile-menu">
+          <li><a class="subheader">Gig Tracker</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/zoe.html">Zoe</a></li>
+          <li><a href="/pages/cooper.html">Cooper</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </aside>
+      <main>
+        <div class="container">
+            <h2 class="center">Welcome to the Gig Tracker</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat laboriosam quasi excepturi voluptas saepe dolores cum nemo possimus? Tenetur nobis officiis doloribus perferendis eius adipisci eveniet aliquam sapiente minus facere.</p>
+
+        </div>
+        <div class="container" >
+          <img src="/images/IMG_3039.JPEG" class="responsive-img"  style="max-width: 30%; height: auto; display: block; margin:auto;" >
+        </div>
+
+<!-- Experiment-->
+ <!-- Tasks -->
+ <div class="center">
+  <h2>Personal Gig Schedule</h2>
+  <h5>(Click to add Gigs to your list:)</h5>
+  <button
+    class="btn-floating btn-large green sidenav-trigger"
+    data-target="side-form"
+    aria-label="Add new task"
+  >
+    <i class="material-icons">add</i>
+  </button>
+</div>
+
+ <div class="tasks container grey-text text-darken-1">
+  <div class="card-panel white row valign-wrapper">
+    <div class="col s2">
+      <img
+        src="/images/32.png"
+        class="responsive-img"
+        alt="Gig icon"
+        style="max-width: 100%; height: auto"
+      />
+    </div>
+    <div class="task-detail col s8">
+      <h5 class="task-title black-text">Backyard Show</h5>
+      <div class="task-location">Nichols House</div>
+      <div class="task-gigDate">April 15, 2023</div>
+      <div class="task-gigTime">8:00 PM</div>
+      <div class="task-gigAttend">Yes</div>
+    </div>
+    <div class="col s2 right-align">
+      <button class="task-delete btn-flat" aria-label="Delete task">
+        <i
+          class="large material-icons black-text-darken-1"
+          style="font-size: 30px"
+          >delete_outline</i
+        >
+      </button>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div id="side-form" class="sidenav side-form">
+  <form class="add-task container section">
+    <h6>Add New Task</h6>
+    <div class="divider"></div>
+    <div class="input-field">
+      <label for="title" class="black-text">Gig Title</label>
+      <input
+        placeholder="Enter Gig title"
+        id="title"
+        class="validate"
+        type="text"
+      />
+    </div>
+    <div class="input-field">
+      <label for="location" class="black-text">Gig Location</label>
+      <input
+        placeholder="Enter Gig Location"
+        id="location"
+        class="validate"
+        type="text"
+      />
+    </div>
+    <div class="input-field">
+      <label for="gigDate" class="black-text">Gig Date</label>
+      <input
+        placeholder="Enter Gig Date"
+        id="gigDate"
+        class="validate"
+        type="date"
+      />
+    </div>
+    <div class="input-field">
+      <label for="gigTime" class="black-text">Gig Time</label>
+      <input
+        placeholder="Enter Gig Time"
+        id="gigTime"
+        class="validate"
+        type="time"
+      />
+    </div>
+    <div class="input-field">
+      <label for="gigAttend" class="black-text"></label>
+      <select id="gigAttend">
+        <option value="" disabled selected>Will you attend?:</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Undecided">Undecided</option>
+      </select>
+    </div>
+    <input type="hidden" id="task-id">
+    <div class="input-field center">
+      <button type="button" class="btn-small green" id="form-action-btn">Add</button>
+    </div>
+  </form>
+</div>
+<!-- Experiment above-->
+
+
+
+
+      </main>
+      
+
+      <footer class="page-footer green">
+        <div class="container">
+        <p>© Jim Nichols. All rights reserved.</p>
+        <p>The content, including but not limited to text, graphics, images, logos, and software, is the property of Jim Nichols and is protected by international copyright laws. Unauthorized use, reproduction, or distribution of any content on this website without prior written permission is strictly prohibited.</p>
+        <p>For inquiries regarding copyright, please contact jnichols3@cox.net.</p>
+      </footer>
+    </div>
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/ui.js"></script>
+    <script type="module" src="/js/firebaseDB.js"></script>      
+</body>
+</html>

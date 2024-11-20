@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Tracker</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body class="green lighten-5">
+    <header>
+        <nav class="green darken-1">
+            <div class="nav-wrapper container">
+              <a href="#" class="brand-logo">Gig Tracker</a>
+              <!-- Hamburger Menu for medium and small screens -->
+               <a href="#" data-target="mobile-menu" class="sidenav-trigger right hide-on-large-and-up" aria-label="Open side menu">
+                <i class="material-icons">menu</i>
+                </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/zoe.html">Zoe</a></li>
+                <li><a href="/pages/cooper.html">Cooper</a></li>
+                <li><a href="/pages/Contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <aside>
+        <!-- Sidenav for small and medium screens -->
+        <ul class="sidenav" id="mobile-menu">
+          <li><a class="subheader">Gig Tracker</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/zoe.html">Zoe</a></li>
+          <li><a href="/pages/cooper.html">Cooper</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </aside>
+      <main>
+        
+            <h2 class="center">Contact Us</h2>
+            <div class="row container center">
+                <div class="col s12 m6">
+                    <h4 class="center soc">Zoe Nichols</h4>
+                    <a href="https://www.instagram.com/zoebe_nichols"><img src="/images/ig icon.png"></a>
+                    <a href="https://youtu.be/r_HEFx0EvC4"><img src="/images/YT icon.png"></a>
+                </div>
+                <div class="col s12 m6">
+                    <h4 class="center soc">Cooper Nichols</h4>
+                    <a href="https://www.instagram.com/cooperplaysdrums"><img src="/images/ig icon.png"></a>
+                    <a href="https://www.youtube.com/@coopernicholsRLRR"><img src="/images/YT icon.png"></a>
+                </div>
+            </div>
+            <div class="container">
+            <form class="container z-depth-2 white" id="contactForm">
+                <br/>
+                <h5 class="center">Send a message:</h5>
+               <div class="row">
+                <div class="input-field col s12">
+                    <select id="recipient">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Zoe</option>
+                      <option value="2">Cooper</option>
+                      <option value="3">Both</option>
+                    </select>
+                    <label>Message to:</label>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">Your First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Your Last Name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Your Email Address</label>
+                    </div>
+                  </div>
+                  
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Message</label>
+                    </div>
+                    </div>
+                    <div class="row center input-field">
+                        <button class="btn waves-effect waves-light green" type="submit" name="action">Send
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <br/>
+                        <br/>
+                    </div>
+
+
+            </form>
+            <br/>
+
+
+
+            </div>
+        
+      </main>
+      
+
+      <footer class="page-footer green">
+        <div class="container">
+        <p>© Jim Nichols. All rights reserved.</p>
+        <p>The content, including but not limited to text, graphics, images, logos, and software, is the property of Jim Nichols and is protected by international copyright laws. Unauthorized use, reproduction, or distribution of any content on this website without prior written permission is strictly prohibited.</p>
+        <p>For inquiries regarding copyright, please contact jnichols3@cox.net.</p>
+      </footer>
+    </div>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/ui.js"></script>     
+</body>
+</html>
